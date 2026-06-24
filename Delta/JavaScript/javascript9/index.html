@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="site-header">
+        <h1>Simple DOM Practice</h1>
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="card" id="intro">
+            <h2>Welcome</h2>
+            <p class="lead">Yeh ek simple page hai DOM practice ke liye.</p>
+        </section>
+
+        <section class="card">
+            <h2>Features List</h2>
+            <ul id="features">
+                <li class="item">HTML tags</li>
+                <li class="item">IDs</li>
+                <li class="item">Classes</li>
+                <li class="item">Forms</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="input" placeholder="Your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input" placeholder="you@example.com">
+
+                <button type="submit" id="submitBtn" class="btn">Send</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Simple Table</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td>1</td>
+                        <td class="name">Ali</td>
+                    </tr>
+                    <tr class="row">
+                        <td>2</td>
+                        <td class="name">Sara</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card" id="gallery">
+            <h2>Image Cards</h2>
+            <div class="cards">
+                <div class="img-card" id="card1">
+                    <img src="https://placekitten.com/300/180" alt="Cute kitten" class="card-img">
+                    <h3 class="card-title">Kitten</h3>
+                    <p class="card-desc">Simple caption for the kitten image.</p>
+                    <button class="btn show-btn">Show</button>
+                </div>
+
+                <div class="img-card" id="card2">
+                    <img src="https://placehold.co/300x180?text=Picture" alt="Placeholder" class="card-img">
+                    <h3 class="card-title">Placeholder</h3>
+                    <p class="card-desc">Another caption for practice.</p>
+                    <button class="btn show-btn">Show</button>
+                </div>
+
+                <div class="img-card" id="card3">
+                    <img src="https://placebear.com/300/180" alt="Bear" class="card-img">
+                    <h3 class="card-title">Bear</h3>
+                    <p class="card-desc">One more sample image.</p>
+                    <button class="btn show-btn">Show</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p>Footer text <span class="small">- practice DOM</span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

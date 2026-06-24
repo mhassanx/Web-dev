@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.green{
+
+    background-color: green;
+    color: blue;
+;
+}
+
+.purple{
+    background-color: purple;
+    color: blue;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.nav-link {
+  margin-left: 12px;
+  color: #0066cc;
+  text-decoration: none;
+}
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  margin: 14px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.lead {
+  color: #555;
+  font-size: 14px;
+}
+
+#features {
+  padding-left: 20px;
+}
+.item {
+  margin: 6px 0;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  margin: 8px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #218838;
+}
+
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+#data-table th,
+#data-table td {
+  border: 1px solid #e6e6e6;
+  padding: 8px;
+  text-align: left;
+}
+.row:nth-child(even) {
+  background: #fafafa;
+}
+
+#site-footer {
+  text-align: center;
+  padding: 12px 0;
+  color: #666;
+}
+
+.small {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Gallery / image cards */
+.cards {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.img-card {
+  width: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 16px;
+  margin: 8px 12px 4px;
+}
+.card-desc {
+  font-size: 13px;
+  color: #555;
+  margin: 0 12px 8px;
+}
+.img-card .btn {
+  margin: 8px 12px 12px;
+}
+
+@media (max-width: 760px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
